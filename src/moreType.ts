@@ -59,5 +59,5 @@ function redirectBasedOnRole(role: Role): void {
 }
 
 function neverReturn(): never {
-    while(true){}
+    while(true){  }
 }
