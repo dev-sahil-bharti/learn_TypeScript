@@ -5,32 +5,20 @@ import Counter from './components/Counter.tsx'
 import type { Chai } from './types/type.tsx'
 
 const menu: Chai[] = [
-  {
-    id: 10,
-    name: "masala Chai",
-    price: 40,
-    isSpecial: true
-  },
-  {
-    id: 11,
-    name: "Ginger Chai",
-    price: 50,
-    isSpecial: true
-  },
+  { id: 10, name: "masala Chai", price: 25, },
+  { id: 11, name: "Ginger Chai", price: 50, },
+  { id: 10, name: "lemon", price: 40, },
 
 ]
+
 function App() {
 
   return (
     <>
-      <div className='flex items-center justify-center h-screen text-center'>
+      <div className='grid items-center justify-center h-screen text-center'>
 
         <div>
-          <Card
-            name="HeadPhone"
-            isSpecial={true}
-            price={800}
-          />
+          <Card name="HeadPhone" isSpecial={true} price={800} />
         </div>
 
         <div>
@@ -42,6 +30,7 @@ function App() {
             items={menu}
           />
         </div>
+
       </div>
     </>
   )

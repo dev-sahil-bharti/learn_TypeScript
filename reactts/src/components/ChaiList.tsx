@@ -14,7 +14,7 @@ function ChaiList({ items }: chaiListProps) {
                     key={Chai.id}
                     name={Chai.name}
                     price={Chai.price}
-                    isSpecial={Chai.isSpecial}
+                    isSpecial={Chai.price > 30}
                 />
             ))}
         </>
